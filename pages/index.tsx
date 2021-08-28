@@ -3,7 +3,7 @@ import SectionAbout from "../components/SectionAbout";
 
 const HomePage = () => {
   return (
-    <div className="space-y-14 lg:space-y-24">
+    <div className="space-y-14 lg:space-y-24 flex-grow">
       <Head>
         <title>Justin Chiou</title>
         <link rel="icon" href="/favicon.ico" />

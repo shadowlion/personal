@@ -5,7 +5,7 @@ import BaseFooter from "../components/BaseFooter";
 
 const _App = ({ Component, pageProps }) => {
   return (
-    <div className="dark:bg-black">
+    <div className="dark:bg-black flex flex-col min-h-screen">
       <ThemeProvider attribute="class" enableSystem={false}>
         <BaseNavigation />
         <Component {...pageProps} />
