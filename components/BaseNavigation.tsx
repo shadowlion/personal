@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
-// import ThemeChanger from "../components/ThemeChanger";
-import ThemeSwitch from "./ThemeSwitch";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const BaseNavigation = () => {
   return (
@@ -16,7 +15,7 @@ const BaseNavigation = () => {
             Justin Chiou
           </a>
         </Link>
-        <ThemeSwitch />
+        <ThemeSwitcher />
       </div>
     </div>
   );
