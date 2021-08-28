@@ -1,7 +1,18 @@
-import 'tailwindcss/tailwind.css'
+import "tailwindcss/tailwind.css";
+import { ThemeProvider } from "next-themes";
+import BaseNavigation from "../components/BaseNavigation";
+import BaseFooter from "../components/BaseFooter";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const _App = ({ Component, pageProps }) => {
+  return (
+    <>
+      <ThemeProvider attribute="class" enableSystem={false}>
+        <BaseNavigation />
+        <Component {...pageProps} />
+        <BaseFooter />
+      </ThemeProvider>
+    </>
+  );
+};
 
-export default MyApp
+export default _App;
